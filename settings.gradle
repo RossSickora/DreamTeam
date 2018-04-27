@@ -1,0 +1,3 @@
+rootProject.name = 'DreamTeam'
+include 'Teams'
+
