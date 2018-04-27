@@ -1,8 +1,6 @@
 package com.team.dream.teams.service;
 
-import java.util.concurrent.atomic.AtomicLong;
-
-import com.team.dream.teams.dao.TeamRepository;
+import com.team.dream.teams.repositories.TeamRepository;
 import com.team.dream.teams.models.Team;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

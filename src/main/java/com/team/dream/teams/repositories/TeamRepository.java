@@ -1,4 +1,4 @@
-package com.team.dream.teams.dao;
+package com.team.dream.teams.repositories;
 
 import com.team.dream.common.dao.IRepository;
 import com.team.dream.members.models.Member;
