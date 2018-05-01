@@ -5,6 +5,7 @@ import com.team.dream.teams.models.Team;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.math.BigInteger;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -13,7 +14,7 @@ import static org.junit.Assert.assertNotNull;
 public class TeamRepositoryTest {
 
     TeamRepository classUnderTest;
-    private String teamIdentifier = "Identifier";
+    private BigInteger teamIdentifier = BigInteger.valueOf(1111111);
 
     @Before
     public void setUp() throws Exception {

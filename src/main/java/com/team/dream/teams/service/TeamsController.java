@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.math.BigInteger;
+
 @RestController
 @RequestMapping("/teams")
 public class TeamsController {
@@ -16,7 +18,7 @@ public class TeamsController {
      * @return
      */
     @RequestMapping(value = "/id")
-    public Team getTeam(@RequestParam("id") String teamIdentifier) {
+    public Team getTeam(@RequestParam("id") BigInteger teamIdentifier) {
         return new TeamRepository(teamIdentifier).retrieve();
     }
 }

@@ -4,13 +4,14 @@ import com.team.dream.common.dao.IRepository;
 import com.team.dream.members.models.Member;
 import com.team.dream.teams.models.Team;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TeamRepository implements IRepository<Team> {
-    private String teamIdentifier;
+    private BigInteger teamIdentifier;
 
-    public TeamRepository(String teamIdentifier) {
+    public TeamRepository(BigInteger teamIdentifier) {
         this.teamIdentifier = teamIdentifier;
     }
 
@@ -19,7 +20,7 @@ public class TeamRepository implements IRepository<Team> {
         List<Member> members;
         members = new ArrayList<>();
         members.add(new Member("Ross", "Sickora"));
-        members.add(new Member("Team Identifier", teamIdentifier));
-        return new Team(members);
+        members.add(new Member("Kate", "Sickora"));
+        return new Team(teamIdentifier, members);
     }
 }
