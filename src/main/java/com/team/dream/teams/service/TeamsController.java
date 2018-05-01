@@ -18,7 +18,7 @@ public class TeamsController {
      * @return
      */
     @RequestMapping(value = "/id")
-    public Team getTeam(@RequestParam("id") BigInteger teamIdentifier) {
-        return new TeamRepository(teamIdentifier).retrieve();
+    public Team getTeam(@RequestParam("id") String teamIdentifier) {
+        return new TeamRepository(BigInteger.valueOf(Integer.valueOf(teamIdentifier))).retrieve();
     }
 }

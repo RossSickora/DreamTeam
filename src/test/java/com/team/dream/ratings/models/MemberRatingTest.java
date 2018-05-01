@@ -39,7 +39,7 @@ public class MemberRatingTest {
 
     @Test
     public void setRatingModifiesRating(){
-        Rating rating = new Rating(ResponseValue.POSITIVE);
+        Rating rating = Mockito.mock(Rating.class);
         classUnderTest.setRating(rating);
         assertEquals(rating, classUnderTest.getRating());
     }
